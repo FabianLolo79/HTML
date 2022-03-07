@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+
+    <form action="" target="_blank" method="post">
+        <fieldset>
+            <legend>Datos Personales</legend>
+                <label for="iname">Nombre:</label>
+                <br>
+                <input id="iname" type="text" name="name" tabindex="1" placeholder="Nombre">
+                <br>
+            <label for="isurname">Apellido:</label>
+                <br>
+                <input id="isurname" type="text" name="lastname" tabindex="2" placeholder="Apellido">
+                <br>
+            <label for="iemail">Email:</label>
+                <br>   
+                <input id="iemail" type="email" name="email" placeholder="email"> 
+                <br>
+            <label for="ipass">Contraseña:</label>   
+                <br>
+                <input id="ipass" type="password" name="pass" placeholder="password">     
+                <br>
+        </fieldset>
+            <br>
+        <!-- Botones radio -->
+        <fieldset> 
+            <legend>Color de auto</legend>   
+                <label for="ired">Rojo</label>
+                    <input id="ired" type="radio" name="color" value="red" checked>
+                <label for="igreen">Verde</label>
+                    <input id="igreen" type="radio" name="color" value="green">
+                <label for="iblue">Azul</label>
+                    <input id="iblue" type="radio" name="color" value="blue">
+                <label for="iblack">Negro</label>
+                    <input id="iblack" type="radio" name="color" value="black">
+        </fieldset>    
+            <br>
+
+        <!-- Botones Checkbox-->   
+        <fieldset> 
+            <legend>Colores Preferidos</legend>
+                <label for="ired">Rojo</label>
+                    <input id="ired" type="checkbox" name="red" value="red">
+                <label for="igreen">Verde</label>
+                    <input id="igreen" type="checkbox" name="green" value="green">
+                <label for="iblue">Azul</label>
+                    <input id="iblue" type="checkbox" name="blue" value="blue">
+                <label for="iblack">Negro</label>
+                    <input id="iblack" type="checkbox" name="black" value="black">
+        </fieldset>    
+            <br>
+        <fieldset>
+            <legend>Vehículo preferido</legend>
+                <select name="select">
+                    <option value="1">auto</option>
+                    <option value="2">moto</option>
+                    <option value="3">camión</option>
+                    <option value="4" selected>aeroplano</option>
+                </select>
+        </fieldset>
+        <br>
+        <textarea name="comentario" id="" cols="100" rows="20" placeholder="Comentarios"></textarea>
+        <br>
+        <fieldset>
+            <legend>Eliga un color</legend>
+                <input type="color" name="color">  
+        </fieldset>  
+            <br>  
+            <br>
+        <label>Elige la fecha</label>
+            <input type="date" name="date">
+            &nbsp;  
+        <label>||&nbsp; Elige la fecha y la hora</label>
+            <input type="datetime-local" name="date">
+        <label>||&nbsp; Elija la semana</label>
+            <input type="week" name="week">
+        <label>||&nbsp; Elija el mes</label>
+             <input type="month" name="mes">
+        <label>||&nbsp; Ingrese números</label>
+            <input type="number" name="num" placeholder="Números">
+        <label>||&nbsp; Elija el rango</label>
+            <input type="range" name="num" min="0" max="50">
+        <br>
+        <br>
+        <label>||&nbsp; Busqueda</label>
+            <input type="search" name="search" placeholder="Búsqueda">
+        <label>||&nbsp; Teléfono</label>
+            <input type="tel" name="phone" placeholder="teléfono">
+        <label>||&nbsp; Elija la hora</label>
+            <input type="time" name="time">
+        <label>||&nbsp; Escriba la URL</label>
+            <input type="url" name="url" placeholder="URL">
+        <br>
+        <br>
+        <fieldset>
+        <input type="file" name="file">
+        </fieldset>
+        <br>
+        <br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="borrar">
+    </form>
+
+    
+</body>
+</html>
